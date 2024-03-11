@@ -1,0 +1,46 @@
+nav{
+    /* background-color: grey; */
+    margin: 30px auto;
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+.nav-logo{
+    height: 50px;
+    width: auto;
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+}
+
+ul li{
+    text-align: right;
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative;
+}
+
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background-color: rgb(255,167,35);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -45px;
+    transition: 0.5s;
+}
+
+ul li a:hover::after{
+    width: 100%;
+}
